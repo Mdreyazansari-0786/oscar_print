@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <>
       <div className="w-full flex justify-center items-center mx-auto">
-        <div className="container w-full h-full flex flex-wrap justify-center items-center space-x-8">
+        <div className="container w-full h-full flex flex-wrap justify-center items-center md:space-x-8">
           <div className="w-[40%] h-full hidden md:flex justify-center items-center p-5">
             <img src={login1} alt="" className="w-[512px]" />
           </div>
