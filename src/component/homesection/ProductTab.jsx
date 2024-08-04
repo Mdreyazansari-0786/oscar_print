@@ -28,7 +28,7 @@ const ProductTab = () => {
     tabData.map((item, id) => (
       <div
         key={id}
-        className="w-full border-r-2 border-white border-b-2 sm:border-b-0 p-2 flex flex-col items-center justify-center text-center gap-y-2 py-4 text-white"
+        className="w-full border-r-2 md:border-r-0 border-white border-b-2 sm:border-b-0 p-2 flex flex-col items-center justify-center text-center gap-y-2 py-4 text-white"
       >
         <div>{item.icontab}</div>
         <p className="text-sm sm:text-base 2xl:text-lg font-normal">
