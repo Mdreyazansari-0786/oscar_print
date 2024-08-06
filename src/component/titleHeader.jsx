@@ -13,7 +13,7 @@ const Titleheader = ({title,description,btn="see all",textcolor='#ffff'}) => {
         )
       }
     </div>
-    <button style={{color:textcolor,}} className={`py-2.5 w-1/2 sm:w-auto leading-4 sm:leading-9 px-6 transition-all duration-200 ease-in hover:border-[#524BAD]  border-[0.099rem] font-[poppins] text-sm sm:text-base font-normal uppercase text-center`}>
+    <button style={{color:textcolor,}} className={`py-2 w-1/2 sm:w-auto leading-4 sm:leading-6 px-6 transition-all duration-200 ease-in hover:border-[#524BAD]  border-[0.099rem] font-[poppins] text-sm sm:text-base font-normal uppercase text-center`}>
       {btn}
     </button>
     </div>
