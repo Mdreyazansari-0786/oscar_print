@@ -5,6 +5,8 @@ import HeroSection from '../component/homesection/HeroSection';
 import Productsection from '../component/homesection/Productsection';
 import CardDesign from '../component/homesection/CardDesign';
 import ProductTab from '../component/homesection/ProductTab';
+import OscarProduct from '../component/homesection/Section_1';
+import TestomonialSection from '../component/homesection/testomonial/TestomonialSection';
 const Home = () => {
 
     const services = [
@@ -44,13 +46,13 @@ const Home = () => {
         <div className='w-full'>
         <HeroSection/>
         <Productsection/>  
-        <CardDesign title='OscarPrint Picks: Top products for building your brand' />
+        <CardDesign titletext='OscarPrint Picks: Top products for building your brand' />
         <ProductTab/>
 
         <div className="min-h-screen bg-gray-100 px-2 md:px-20 py-10">
-        <div className='w-full py-6 gap-y-4 sm:gap-y-4 items-center justify-center flex flex-col text-center'>
+        <div className='w-full py-6 gap-y-4 sm:gap-y-4 items-center text-center justify-center flex flex-col'>
             <p className='text-sm sm:text-base 2xl:text-xl font-semibold text-[#847E8C]'>Our Services</p>
-      <p className=" text-base sm:text-3xl 2xl:text-[54px] w-full md:w-3/4  lg:w-[62%] sm:leading-8  md:leading-[52px]  font-bold text-center">
+      <p className=" text-base dm_sansFont  sm:text-3xl 2xl:text-[54px] w-full md:w-3/4  lg:w-[62%] sm:leading-8  md:leading-[52px]  font-semibold text-center">
       Your One-Stop Printing Solution - Explore Our Services
       </p>
             <p className='text-sm sm:text-base 2xl:text-xl font-semibold text-[#847E8C]'>lorem13</p>
@@ -67,7 +69,13 @@ const Home = () => {
       </div>
     </div>
 
-    <CardDesign title='Tools to help build your business' />
+    <CardDesign titletext='Tools to help build your business' />
+    <div className="w-full px-2 sm:px-20 bg-[#524BAD]">
+        <OscarProduct />
+      </div>
+      <div className='px-2 py-6 sm:py-10 sm:px-20'>
+        <TestomonialSection />
+      </div>
 
       </div>
 

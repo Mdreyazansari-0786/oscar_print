@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar cartitem="3" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

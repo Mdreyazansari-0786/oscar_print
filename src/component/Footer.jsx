@@ -20,7 +20,7 @@ const Footer = () => {
               ONLINE SHOPPING
             </h1>
             <div>
-              <ul className="text-white text-xs flex flex-col gap-2">
+              <ul className="text-white text-xs font-normal 2xl:text-sm flex flex-col gap-2">
                 <li><Link to="#">Men</Link></li>
                 <li><Link to="#">Women</Link></li>
                 <li><Link to="#">Kids</Link></li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 USEFUL LINKS
               </h1>
               <div>
-                <ul className="text-white text-xs sm:text-base flex flex-col gap-2">
+                <ul className="text-white text-xs font-normal 2xl:text-sm flex flex-col gap-2">
                   <li><Link to="#">Blog</Link></li>
                   <li><Link to="#">Careers</Link></li>
                   <li><Link to="#">Site Map</Link></li>
@@ -51,7 +51,7 @@ const Footer = () => {
               CUSTOMER POLICIES
             </h1>
             <div>
-              <ul className="text-white text-xs flex flex-col gap-2">
+              <ul className="text-white text-xs font-normal 2xl:text-sm flex flex-col gap-2">
                 <li><Link to="#">Contact Us</Link></li>
                 <li><Link to="#">FAQ</Link></li>
                 <li><Link to="#">T&C</Link></li>
@@ -122,13 +122,13 @@ const Footer = () => {
         <div className="pr-4 sm:pr-8 md:pr-16 mt-6 space-y-4 pb-4">
           <h1 className="text-white sm:text-base font-semibold text-sm">POPULAR SEARCHES</h1>
           <div>
-            <p className="text-xs text-white">Makeup | Dresses For Girls | T-Shirts | Sandals Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers Wallets Tops | Earrings | FastTrack | Watches Kurtis | Nike Smart Watches | Titan Watches | Designer Blouse | Gowns Rings | Cricket Shoes | Forever 21 Eye Makeup | Photo Frames Punjabi Suits  | Show Lipstick | Saree Watches | Dresses Lehenga | Nike Shoes Goggles | Bras Suit Chinos | Shoes Adidas Shoes | Woodland Shoes | Jewellery Designers Sarees</p>
+            <p className="text-xs font-normal 2xl:text-sm text-white">Makeup | Dresses For Girls | T-Shirts | Sandals Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers Wallets Tops | Earrings | FastTrack | Watches Kurtis | Nike Smart Watches | Titan Watches | Designer Blouse | Gowns Rings | Cricket Shoes | Forever 21 Eye Makeup | Photo Frames Punjabi Suits  | Show Lipstick | Saree Watches | Dresses Lehenga | Nike Shoes Goggles | Bras Suit Chinos | Shoes Adidas Shoes | Woodland Shoes | Jewellery Designers Sarees</p>
           </div>
         </div>
         {/* <div className="w-full  border-[1px] border-opacity-40 border-[#FFFFFF] mt-8"></div> */}
         <hr class="h-[1px] my-4 bg-gray-200 bg-opacity-35 border-0" />
         <div className="py-4">
-          <p className="text-xs text-center sm:text-start text-white">In case of any concern, <span className="font-bold">Contact Us</span></p>
+          <p className="text-xs font-normal 2xl:text-sm text-center sm:text-start text-white">In case of any concern, <span className="font-bold">Contact Us</span></p>
         </div>
       </div>
   );

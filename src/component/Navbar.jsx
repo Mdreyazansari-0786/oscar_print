@@ -8,8 +8,10 @@ import { CgShoppingBag } from "react-icons/cg";
 import logo from '../assets/oscar_image/header-logo.svg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-const Navbar = () => {
+const Navbar = ({cartitem=2}) => {
   const[showmenu,setShowMenu] =useState(true)
+  // const item = item.length
+  // console.log("cartitem",item);
   return (
     <nav className="bg-[#524BAD] z-20 sticky top-0 left-0 right-0 text-[#DFDFDF] pt-4 md:px-20 md:py-4">
       <div className="container mx-auto flex gap-y-3 flex-col ">
@@ -51,9 +53,9 @@ const Navbar = () => {
         <FiHeart/>
         <div className='relative'>
         <CgShoppingBag/>
-        <div className='absolute w-5 h-5 rounded-full bg-black text-white flex items-center justify-center text-[8px] font-medium -top-2.5 -right-3'>
-            0
-        </div>
+        {cartitem && (<div className='absolute w-5 h-5 rounded-full bg-black text-white flex items-center justify-center text-[8px] font-medium -top-2.5 -right-3'>
+            {cartitem}
+        </div>)}
         </div>
         <LuFolderClosed/>
         </div>
@@ -63,19 +65,10 @@ const Navbar = () => {
         </div>
         <div>
    
-        {/* <div className="md:flex h-full md:flex-row hidden md:items-center md:justify-between text-xs lg:text-sm font-normal">
-          <Link to="#" className="hover:text-white">BUSINESS CARDS</Link>
-          <Link to="#" className="hover:text-white">POSTCARDS & PRINT ADVERTISING</Link>
-          <Link to="#" className="hover:text-white">SIGNS, BANNERS & POSTERS</Link>
-          <Link to="#" className="hover:text-white">LABELS, STICKERS & PACKAGING</Link>
-          <Link to="#" className="hover:text-white">HOME & PHOTO GIFTS</Link>
-          <Link to="#" className="hover:text-white">WEDDING</Link>
-          <Link to="#" className="hover:text-white">CLOTHING & BAGS</Link>
-          <Link to="#" className="hover:text-white">DESIGN & LOGO</Link>
-        </div> */}
+        
 
 
-<div className={`flex lg:flex-row lg:items-center items-start px-8 gap-y-6 flex-col lg:max-h-auto lg:py-4 lg:justify-between text-xs lg:text-sm font-medium md:font-normal transition-all duration-300 ${showmenu ? 'max-h-0 overflow-hidden' : 'max-h-screen pb-6'}`}>
+<div className={`flex dm_sansFont lg:flex-row lg:items-center items-start gap-y-6 flex-col lg:max-h-auto lg:py-4 lg:justify-between text-xs sm:text-sm font-medium md:font-normal transition-all duration-300 ${showmenu ? 'max-h-0 overflow-hidden' : 'max-h-screen pb-6'}`}>
           <Link to="#" className="hover:text-white block">BUSINESS CARDS</Link>
           <Link to="#" className="hover:text-white block">POSTCARDS & PRINT ADVERTISING</Link>
           <Link to="#" className="hover:text-white block">SIGNS, BANNERS & POSTERS</Link>
