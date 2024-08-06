@@ -6,6 +6,7 @@ import Footer from "./component/Footer";
 import Login from "./page/loginpage/Login";
 import SignUp from "./page/signUp/Signup";
 import SignIn from "./page/signIn/SignIn";
+import ResetPassword from "./page/restPassword/resetPassword";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/reset" element={<ResetPassword />} />
       </Routes>
       <Footer />
     </>
